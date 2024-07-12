@@ -1,0 +1,286 @@
+.navbar {
+    background-color: rgba(62, 73, 2, 0.986) !important; /* Almond background color */
+    /* padding-left: 10px;
+    padding-right:10px ; */
+}
+
+.navbar-brand {
+    color: black !important; /* Grey text color */
+    font-size: 2.3rem !important; /* Font size 2rem */
+}
+
+.navbar-nav .nav-link {
+    color: whitesmoke !important; /* Grey text color for links */
+}
+
+.navbar-nav {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.navbar-nav > li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Custom Division with Background */
+.custom-division {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the pseudo-element stays within the container */
+    text-align: center;
+}
+
+.custom-division::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width of the container */
+    height: 100%; /* Cover the entire height of the container */
+    background-image: url('./bgg.jpg');
+    background-size: cover;
+    background-position: center;
+     /* Adjust opacity as needed (0.0 to 1.0) */
+    z-index: -1; /* Ensure the background remains behind the content */
+}
+
+.custom-division-content {
+    position: relative;
+    z-index: 1; /* Ensures content appears above the pseudo-element */
+    color: #000000cf; /* Text color */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.522);
+}
+
+.custom-division img {
+    display: block;
+    margin: 0 auto;
+}
+
+.custom-division p {
+    text-align: justify;
+}
+
+/* Unordered List Styles */
+ul {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: rgba(221, 241, 5, 0.938) /* Bootstrap primary color for emphasis */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: grey;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.card img {
+    border-radius: 20px 20px 20px 20px; /* Rounded corners for the top */
+    object-fit: cover; /* Ensure images cover the card width */
+    height: 250px; /* Increase the height to make all card images larger */
+    width: 50%; /* Ensure the image takes the full width of the card */
+    margin-left: 100px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.card-body {
+    padding: 1.5rem; /* Padding inside the card body */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ede6e6bb;
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-text {
+    color: dimgray;
+}
+
+.btn-primary {
+    background-color: #FFC107;
+    border-color: #FFC107;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #FFA000;
+    border-color: #FFA000;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 70%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.upload-btn {
+    margin-top: 20px;
+}
+
+body {
+    background-color: #f1f3eb;
+}
+
+.footer {
+    background-color: rgba(62, 73, 2, 0.986);
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li i {
+    margin-right: 10px;
+    color: #edf0e8;
+}
+
+.footer .footer-link {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove default underline */
+}
+
+.footer .footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+}
+
+.footer .social-icons li a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer .social-icons li a:hover {
+    color: #eaf0f6;
+}
+
+.footer p {
+    margin: 0;
+    color: #eff5f0;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+/* Pet Care Section */
+.pet-care {
+    margin: 20px;
+}
+
+.pet-care h1,
+.pet-care h2,
+.pet-care h3 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.pet-care p,
+.pet-care ul {
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.pet-care img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pet-care .row {
+    margin-bottom: 20px;
+}
+
+.pet-care ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pet-care ul li {
+    margin-bottom: 10px;
+}
+.body {
+    background:rgba(223, 232, 232, 0.938)
+}
+.footer{
+    background-color: rgba(218, 234, 233, 0.938)
+}
